@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <!-- FontAwesome CSS -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+     
+   <link rel="stylesheet" href="Css\DashBoard.css">
+   
+    <title>Hello, world!</title>
+   
+
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">商務後台控制</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active"> 
+                <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">列表</a>
+              </li>            
+            </ul>
+          </div>
+        </nav>
+
+        <div class="container-fluid my-4 end-main">
+          <div class="row mb-3">
+            <div class="col-md-3">
+              <div class="input-group my-2">
+                <input type="text" class="form-control" placeholder="Seach for..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-secondary" type="button">GO!</button>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-9 text-right my-2 ">
+                <a href="#" class="btn btn-primary" data-title="快速下單" data-toggle="modal" data-target="#editModal"><i class="fas fa-shopping-cart"></i>  快速下單</a>
+              </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <th width="10">#</th>
+                <th >品項</th>
+                <th width="120" >Name</th>
+                <th width="200">Email</th>
+                <th width="120">狀態</th>
+                <th class="text-right">金額</th>
+                <th width="150" class="text-center">操作</th>
+              </thead>
+              <tbody>
+                <tr class="table-warning">
+                  <td>1</td>
+                  <td class="text-primary">超級肥皂</td>
+                  <td id="TdCustName1">Mark</td>
+                  <td id="TdCustEmail1">mark@gmail.com</td>
+                  <td>已出貨</td>
+                  <td class="text-right">NT$899</td>
+                  <td>
+          
+                    <div class="btn-group">
+                      <button class="btn btn-outline-secondary btn-sm" data-backdrop="static" data-tdname="超級肥皂" data-tdcustName="Mark" data-title="編輯 超級肥皂"
+                        data-tdcustemail="mark@gmail.com" data-toggle="modal" data-target="#editModal">edit</button>
+                      <button class="btn btn-outline-secondary btn-sm">read</button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle  dropdown-toggle-split" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        other
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">edit</a>
+                        <a class="dropdown-item" href="#">read</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-danger" data-title="超級肥皂" data-toggle="modal" data-backdrop="static" data-target="#deleteModal"
+                          href="#">delete</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td class="text-primary">無泡沫沐浴乳</td>
+                  <td id="CustName2">kill
+                    <span class="ml-2 badge badge-pill badge-danger">奧客</span>
+                  </td>
+                  <td id="CustEmail2">mark@gmail.com</td>
+                  <td>已出貨</td>
+                  <td class="text-right">NT$899</td>
+                  <td class="text-center">
+                    <div class="btn-group">
+                      <button class="btn btn-outline-secondary btn-sm" data-backdrop="static" data-tdname="無泡沫沐浴乳" data-tdcustname="kill" data-title="編輯 無泡沫沐浴乳"
+                        data-tdcustemail="kill@gmail.com" data-toggle="modal" data-target="#editModal">edit</button>
+                      <button class="btn btn-outline-secondary btn-sm">read</button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle  dropdown-toggle-split" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        other
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">edit</a>
+                        <a class="dropdown-item" href="#">read</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-danger " href="#">delete</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table-danger">
+                  <td>3</td>
+                  <td class="text-primary">馬糞皂</td>
+                  <td id="CustNmae3">Mark
+                    <span class="ml-2 badge badge-pill badge-success">常客</span>
+                  </td>
+                  <td id="CustEmail3">mark@gmail.com</td>
+                  <td class="text-danger">缺貨</td>
+                  <td class="text-right">NT$899</td>
+                  <td class="text-center">
+                    <div class="btn-group">
+                      <button class="btn btn-outline-secondary btn-sm">edit</button>
+                      <button class="btn btn-outline-secondary btn-sm">read</button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle  dropdown-toggle-split" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        other
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">edit</a>
+                        <a class="dropdown-item" href="#">read</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-danger " href="#">delete</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td class="text-primary">無鹽奶油</td>
+                  <td id="CustNmae4">Mark</td>
+                  <td id="CustEmail4">mark@gmail.com</td>
+                  <td>已出貨</td>
+                  <td class="text-right">NT$899</td>
+                  <td class="text-center">
+                    <div class="btn-group">
+                      <button class="btn btn-outline-secondary btn-sm">edit</button>
+                      <button class="btn btn-outline-secondary btn-sm">read</button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle  dropdown-toggle-split" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        other
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">edit</a>
+                        <a class="dropdown-item" href="#">read</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-danger " href="#">delete</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="7" colspan="7">...</th>
+                </tr>
+                <tr>
+                  <th scope="7" colspan="7" >...</th>
+                </tr>
+                <tr>
+                  <th scope="7" colspan="7">...</th>
+                </tr>
+                <tr>
+                  <th scope="7" colspan="7">...</th>
+                </tr>
+                <tr>
+                    <th scope="7" colspan="7">...</th>
+                  </tr>
+              </tbody>
+          
+            </table>
+          </div>
+          
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+  
+  
+          <footer class="bg-light text-center mt-5 py-3">
+              
+                  ◎2018  中西合併
+              
+          </footer>
+        </div>
+
+
+
+  
+  <!--edit Modal -->
+  <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="EClientName">用戶名稱</label>
+                    <input type="text" class="form-control" id="EClientName" placeholder="name">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                <div class="form-group">
+                  <label for="EClientEmail1">Email address</label>
+                  <input type="email" class="form-control" id="EClientEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="EClientItem">品項</label>
+                          <input type="text" class="form-control"  id="EClientItem" disabled>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="EClientCount">數量</label>
+                          <input type="number" class="form-control" id="EClientCount">
+                      </div>
+                  </div>   
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <!--edit Modal -->
+
+  <!--delete Modal -->
+  <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-danger text-white">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">remove</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--delete Modal -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+
+  <script>
+    $(function () {
+       $('[data-toggle="tooltip"]').tooltip()
+       
+       //modal 事件
+       $('#editModal').on('show.bs.modal',function(event){
+         var btn=$(event.relatedTarget);
+        // console.log(btn.val());
+         var title=btn.data('title');
+         var tdCustName=btn.data('tdcustname');
+         var tdCustEmail=btn.data('tdcustemail');
+         var tdName=btn.data('tdname');
+       //  console.log(typeof(TdCustName));
+         console.log(tdCustName);
+         console.log(tdCustEmail);
+         console.log(tdName);
+         
+         var modal=$(this);
+         modal.find('.modal-title').text(title);
+
+
+
+        //  var TdName1= $('#TdName1').val();
+        //  var TdCustEmail1= $('#TdCustEmail').val();
+        //  var TdCustName1= $('#TdCustName1').val();
+
+        //  console.log(TdName1.text);
+        //  console.log(typeof(TdCustName1));
+        //  console.log(TdCustEmail1);
+         
+        //data-TdName="無泡沫沐浴乳" data-TdCustName="kill" data-title="編輯 無泡沫沐浴乳" data-TdCustEmail1="kill@gmail.com"
+
+         $('#EClientName').val(tdCustName);
+         $('#EClientEmail').val(tdCustEmail);
+         $('#EClientItem').val(tdName);
+         $('#EClientCount').val(1);
+
+       });
+       $('#deleteModal').on('show.bs.modal',function(event){
+         var btn=$(event.relatedTarget);
+  
+         var title=btn.data('title');
+         var modal=$(this);
+         modal.find('.modal-title').text('確認刪除'+title);
+
+       });
+
+    });
+  </script>
+</html>
