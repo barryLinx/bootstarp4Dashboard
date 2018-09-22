@@ -108,10 +108,16 @@ textarea:hover{
 	display: inline;
 	
 }
+
+.badges ul li:nth-child(1) {
+	border-right: 1px solid #555;
+	padding-right: 5px;
+}
+
+
 .badges ul li:nth-child(2) {
-	display: inline;
+
 	margin-right: 20px;
-	
 }
 
 
@@ -241,7 +247,6 @@ header ul li:hover{
 	margin-top: 60px;
 	padding-top: 20px;
 	width:100%;
-
 }
 
 #section-A h3{
@@ -279,16 +284,16 @@ header ul li:hover{
 /* Newsletter */
 #newsletter{
 	width: 100%;
-	height: 600px;
+
 	background-image: linear-gradient(#10773b,#2def7e);;
 	color: #fff;
-	margin-left: auto;
-	margin-right: auto;
+
+	padding: 60px 0px;
+	margin-top: 40px;
 }
 
 #newsletter h3{
-	padding-top: 50px;
-	margin-top: 30px;
+
 	margin-bottom: 60px;
 	text-align: center;
 	font-size: 28px;
@@ -299,18 +304,18 @@ header ul li:hover{
 	width: 40%;
 	/* background-color: #fff; */	
 	margin: 0 5%;
+	
 }
 #newsletter  .form-right{
 	margin: 0 5%;
 	width: 40%;
-	height: 280px;
 	float: left;
 }
 
 #newsletter .message{
 	display: block;
 	width: 100%;
-	height: 280px;	
+  padding: 90px;
 }
 
 #newsletter form button{
@@ -346,7 +351,6 @@ footer .branding{
 	text-align: left;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
-	
 }
 
 footer .branding a{
@@ -360,7 +364,7 @@ footer .branding a{
 	margin-left: 20px;
 }
 
-footer .concact{
+footer .contact{
 
 	margin-right: 20px;
 	margin-top: 30px;
